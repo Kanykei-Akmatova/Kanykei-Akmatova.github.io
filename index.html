@@ -2,65 +2,359 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>About Kanykei Akmatova</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanykei Akmatova - Personal Page</title>
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
   </head>
+
   <body>
-    <h1>Kanykei Akmatova</h1>
-    <img
-      src="Kanykei_Akmatova.png"
-      alt="Kanykei Akmatova photo"
-      width="150"
-      height="225"
-    />
-    <h2 lang="en">
-      Full-time student of Computer Programming in Algonquin College and Mother
-      of the beautiful daughter
-    </h2>
-    <p>
-      I <em>have worn many hats</em> as a lawyer, project manager, project
-      coordinator, event planner. However, when I reflect on the past 20 years
-      cultivating skills in management, project management, planning and
-      communication.I realize that my passion comes from working with
-      intelligent, motivated people.
-      <b
-        >I am an influential team memberable to respond quickly and accurately
-        to different projects' issues</b
-      >.
-    </p>
-    <h2>
-      I adapt quickly to new environments and thrive on multiple tasks. I
-      receive no greater joy than being driven by my curiosity. I thrive when I
-      come up with a simple creative solution to solve a complex issue. I like
-      engineering order out of chaos.
-    </h2>
-    <ul>
-      <li><h3>organizational know-how</h3></li>
-      <li><h3>communication skills</h3></li>
-      <li><h3>problem-solving abilities</h3></li>
-      <li><em>collaboration talent</em></li>
-      <li><h3>leadership experience</h3></li>
-    </ul>
-    <h2>
-      Third place in the Ontario Project Management Competition honor March 2021
-      honor issuer PMI Toronto Third Place: Indigenous Project Management |
-      Algonquin College (Ottawa, ON) The project consisted in establishing a
-      framework that integrates Indigenous knowledge and practices into a
-      traditionally Western project management body of knowledge.
-    </h2>
-    <ol type="1">
-      <li>
-        <h3>Third place in the Ontario Project Management Competition</h3>
-      </li>
-      <li>
-        <h3><i>Bachelor Degree in law</i></h3>
-      </li>
-      <li><h3>Bachelor Degree in Pshycology</h3></li>
-      <li><sup>Master Degree in Management</sup></li>
-      <li>
-        <h3><u>Project Management Certificate</u></h3>
-      </li>
-    </ol>
-    <p></p>
-    <p><small>&copy;January 23,2022</small></p>
+    <!-- - #MAIN -->
+    <main>
+      <!--- #SIDEBAR -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/my-avatar.png" alt="Kanykei Akmatova" width="80" />
+          </figure>
+          <div class="info-content">
+            <h1 class="name" title="Kanykei Akmatova">Kanykei Akmatova</h1>           
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:example@example.com" class="contact-link"> example@example.com </a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Ottawa, Ontario, Canada</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/Kanykei-Akmatova" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--- #main-content  -->
+      <div class="main-content">
+        <!-- - #NAVBAR -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- - #ABOUT -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>Just a tech woman!</p>
+            <p>
+              I have worn many hats as a lawyer, project manager, project
+              coordinator, and now I want to be the software developer.
+            </p>
+            <p>
+              I realize that my passion comes from working with intelligent,
+              motivated people. I am an influential team member able to respond
+              quickly and accurately to different projects' issues. I adapt
+              quickly to new environments and thrive on multiple tasks. I
+              receive no greater joy than being driven by my curiosity. I thrive
+              when I come up with a simple creative solution to solve a complex
+              issue. I like engineering order out of chaos.
+            </p>
+            <p>
+              To restart my career after maternity leave, I am studying Computer
+              Programming at Algonquin College.
+            </p>
+          </section>
+
+          <!-- - service -->
+          <section class="service">
+            <h3 class="h3 service-title">What i'm learning</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-design.svg" alt="design icon" width="40" class="filter-dark-blue"/>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Software development</h4>
+                  <p class="service-item-text">
+                    Need to fill.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                    class="filter-dark-blue"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of web services at the professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                    class="filter-dark-blue">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps development</h4>
+
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and Android.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                    class="filter-dark-blue"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Projject managment</h4>
+
+                  <p class="service-item-text">
+                    Need to fill.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+         
+        </article>
+
+        <!-- - #RESUME -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Project Coordinator</h4>
+
+                <span>2020 — Present</span>
+
+                <p class="timeline-text">
+                  Native Women's Association of Canada, Ottawa, Canada
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Algonquin College of Applied Arts and Technology
+                </h4>
+                <span>2021 — Present</span>
+                <p class="timeline-text">
+                  Ontario College Graduate Certificate: Computer Programming
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Algonquin College of Applied Arts and Technology
+                </h4>
+                <span>2020 — 2021</span>
+                <p class="timeline-text">
+                  Ontario College Graduate Certificate: Project Management
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Kyrgyz State Technical University named after I. Razzakov, Bishkek, Kyrgyzstan
+                </h4>
+                <span>2009 — 2011</span>
+                <p class="timeline-text">
+                  Master's degree: Management
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                  <data value="40">40%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="30">30%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Oracle</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">PostgreSQL</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS</h5>
+                  <data value="65">65%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!-- - custom js link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- - ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
